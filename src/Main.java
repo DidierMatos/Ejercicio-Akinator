@@ -115,7 +115,7 @@ public class Main {
                               System.out.print(" Ingrese una característica verdadera para un(a) " + nodo.getTexto().toUpperCase() + ", pero falsa para un " + respuestaUsuario.toUpperCase() + ": ");
                               preguntaUsuario = lecturaTeclado.nextLine();
                               
-                              System.out.println("Temp recorrido: " + arbol.getTemporalRecorrido());
+                              //System.out.println("Temp recorrido: " + arbol.getTemporalRecorrido());
                               
                               arbol.añadirPregunta("¿" + preguntaUsuario + "?");
                               arbol.añadirRespuesta(respuestaUsuario,"");
@@ -123,9 +123,9 @@ public class Main {
                               break;
                         }
                   }
-                  System.out.println("Temp recorrido: " + arbol.getTemporalRecorrido());
+                  //System.out.println("Temp recorrido: " + arbol.getTemporalRecorrido());
                   arbol.resetTemporalRecorrido();
-                  System.out.println("Temp recorrido: " + arbol.getTemporalRecorrido());
+                  //System.out.println("Temp recorrido: " + arbol.getTemporalRecorrido());
                   archivo.serializar(arbol);
                   arbol = archivo.deserializar();
             
