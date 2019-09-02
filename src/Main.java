@@ -75,6 +75,7 @@ public class Main {
                         System.out.println(nodo.getTexto() + "\n");
                         System.out.println(" [ 1 ]  Sí");
                         System.out.println(" [ 2 ] No");
+                        //System.out.println(" [ 3 ] No sé");
                         System.out.print("\n ESCOJA UNA OPCION: ");
                         opcionMenu = lecturaTeclado.nextInt();
                         System.out.println(" -------------------------");
@@ -87,6 +88,10 @@ public class Main {
                                     nodo = arbol.recorrerAdivinador(-1);
                                     break;
                               }
+                              /*case 3: {
+                                    nodo = arbol.recorrerAdivinador(0);
+                                    break;
+                              }*/
                           
                         }
                   } while (opcionMenu < 1 || opcionMenu > 3);
